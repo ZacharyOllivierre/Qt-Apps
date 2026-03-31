@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+QPushButton {
+    background-color: #818384;
+    color: #ffffff;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-weight: bold;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 5px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #b3b3b3;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="screenStack">
+    <property name="geometry">
+     <rect>
+      <x>189</x>
+      <y>89</y>
+      <width>461</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="settingsPage"/>
+    <widget class="QWidget" name="gamePage"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>37</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
