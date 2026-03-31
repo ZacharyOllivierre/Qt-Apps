@@ -1,23 +1,33 @@
-# Qt Creator files
+# Build directories
+/build-*/
+*/build-*/
+*/build/
+build/
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+
+# Qt Creator project files
 *.pro.user
 *.pro.user.*
 *.qtc_clangd/
+*.moc
 
-# Build folders
-build-*/
-build/
+# Logs
+*.log
 
-# MacOS system files
+# Mac system files
 .DS_Store
 
-# Object / binary files
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.dylib
-*.log
-*.ilk
-*.pdb
-*.idb
+# CMake temporary files (if using CMake)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Qt Designer temporary files
+*.autosave
+*.tmp
