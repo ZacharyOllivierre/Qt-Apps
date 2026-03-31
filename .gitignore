@@ -1,14 +1,23 @@
-# Qt build directories
-*/build-*/
-*/build*/
-
-# Qt Creator cache and temp files
-*.user
-*.user.* 
+# Qt Creator files
 *.pro.user
-*.qmake.stash
-*.qmake.cache
+*.pro.user.*
 *.qtc_clangd/
+
+# Build folders
+build-*/
+build/
 
 # MacOS system files
 .DS_Store
+
+# Object / binary files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.log
+*.ilk
+*.pdb
+*.idb
