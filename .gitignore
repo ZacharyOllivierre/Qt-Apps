@@ -1,14 +1,14 @@
-*.pro.user
-*.creator
-*.user
-
+# Qt build directories
 */build-*/
-*/debug/
-*/release/
+*/build*/
 
-moc_*.cpp
-qrc_*.cpp
-ui_*.h
+# Qt Creator cache and temp files
+*.user
+*.user.* 
+*.pro.user
+*.qmake.stash
+*.qmake.cache
+*.qtc_clangd/
 
+# MacOS system files
 .DS_Store
-Thumbs.db
